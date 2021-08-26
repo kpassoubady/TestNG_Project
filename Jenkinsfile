@@ -13,7 +13,7 @@ node('win1') {
                 "PATH=.:C:\\WINDOWS\\SYSTEM32;$mvnHome\\bin;$javaHome\\bin;$PATH"
         ]) {
             echo "PATH=$PATH"
-            bat(/"%MVN_HOME%\bin\mvn" -Panimals clean test/)
+            bat(/"%MVN_HOME%\bin\mvn" -Pdata-provider clean test/)
         }
     }
     stage('Test') {
