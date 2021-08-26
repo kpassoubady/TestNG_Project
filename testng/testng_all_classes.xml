@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Order Suite" parallel="methods" thread-count="3">
+    <test name="Order TestNgExamples">
+        <groups>
+            <run>
+                <include name="fruit"/>
+                <include name="animal"/>
+                <include name="dyno"/>
+                <exclude name="banana"></exclude>
+                <exclude name="cat"></exclude>
+                <exclude name="raptor"></exclude>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.kavinschool.testng.examples.OrderExecutionTest"/>
+            <class name="com.kavinschool.testng.examples.AnimalsTest"/>
+            <class name="com.kavinschool.testng.examples.DynoTest"/>
+        </classes>
+    </test> <!-- TestNgExamples -->
+</suite> <!-- Default Suite -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]">
+  <test name="TestNgExamples(failed)">
+    <classes>
+      <class name="com.kavinschool.testng.examples.DataProviderTest">
+        <methods>
+          <include name="testAlphabets" invocation-numbers="5 6"/>
+        </methods>
+      </class> <!-- com.kavinschool.testng.examples.DataProviderTest -->
+    </classes>
+  </test> <!-- TestNgExamples(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

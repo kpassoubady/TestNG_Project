@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="1" name="ShapeSuite" annotations="JDK" parallel="classes" >
+    <suite-files>
+        <suite-file path="testng_animals.xml" />
+        <suite-file path="testng_order.xml" />
+    </suite-files>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Animal Suite">
+    <test name="Animal Test Cases">
+        <groups>
+            <run>
+                <include name="animal"/>
+                <exclude name="cat"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.kavinschool.testng.examples.AnimalsTest"/>
+        </classes>
+    </test> <!-- TestNgExamples -->
+</suite> <!-- Default Suite -->

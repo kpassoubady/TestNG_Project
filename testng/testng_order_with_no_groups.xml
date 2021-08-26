@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Order Suite">
+    <test name="Order TestNgExamples">
+        <classes>
+            <class name="com.kavinschool.testng.examples.OrderExecutionTest"/>
+        </classes>
+    </test> <!-- TestNgExamples -->
+</suite> <!-- Default Suite -->
+
