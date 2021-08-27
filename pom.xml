@@ -19,7 +19,7 @@
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
         <timestamp>${maven.build.timestamp}</timestamp>
-        <sonar.sources>src/main/java/com/kavinschool/verify</sonar.sources>
+<!--        <sonar.sources>src/main/java/com/kavinschool/verify</sonar.sources>-->
         <sonar.tests>src/test/java/com/kavinschool/testng/examples</sonar.tests>
         <sonar.coverage.exclusions>src/main/java/com/kavinschool/verify</sonar.coverage.exclusions>
         <sonar.links.homepage>https://sonarqube-azureappservice0a95.azurewebsites.net/dashboard?id=KangsCalcTest
