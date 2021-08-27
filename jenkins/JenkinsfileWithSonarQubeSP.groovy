@@ -1,6 +1,6 @@
 node('win2') {
     stage('SCM') {
-        def gitTool = tool 'GIT-WIN'
+        //def gitTool = tool 'GIT-WIN'
         checkout scm
     }
 
@@ -14,7 +14,7 @@ node('win2') {
         ]) {
             echo "PATH=$PATH"
             withSonarQubeEnv() {
-                bat(/"%MVN_HOME%\bin\mvn" clean compile compiler:testCompile -Dmaven.test.failure.ignore package sonar:sonar/)
+                bat(/"%MVN_HOME%\bin\mvn" clean compile compiler:testCompile -Dmaven.test.skip=true package sonar:sonar/)
             }
         }
     }

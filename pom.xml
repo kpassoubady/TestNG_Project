@@ -12,7 +12,6 @@
         <!--        <maven.compiler.source>1.8</maven.compiler.source>-->
         <!--        <maven.compiler.target>1.8</maven.compiler.target>-->
         <!--        <sonar.sources>src/main/java/com/kavinschool/verify</sonar.sources>-->
-
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +28,6 @@
         <sonar.projectKey>TestNG_Project</sonar.projectKey>
         <sonar.projectName>TestNG_Project</sonar.projectName>
         <sonar.maven.plugin.version>3.9.0.2155</sonar.maven.plugin.version>
-<!--        <sonar.java.binaries>**/target/classes</sonar.java.binaries>-->
     </properties>
     <dependencies>
         <dependency>
