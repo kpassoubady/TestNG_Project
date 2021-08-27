@@ -18,4 +18,9 @@ node('win2') {
             }
         }
     }
+
+    stage('Results') {
+        junit '**/target/surefire-reports/TEST-*.xml'
+        archiveArtifacts 'target/*.jar'
+    }
 }
