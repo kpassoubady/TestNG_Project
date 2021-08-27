@@ -14,7 +14,7 @@ node('win2') {
         ]) {
             echo "PATH=$PATH"
             withSonarQubeEnv() {
-                bat(/"%MVN_HOME%\bin\mvn" clean compile compiler:testCompile package sonar:sonar/)
+                bat(/"%MVN_HOME%\bin\mvn" clean compile compiler:testCompile -Dmaven.test.failure.ignore package sonar:sonar/)
             }
         }
     }
