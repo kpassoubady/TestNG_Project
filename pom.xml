@@ -19,6 +19,15 @@
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
         <maven.build.timestamp.format>yyyyMMdd_HHmm</maven.build.timestamp.format>
         <timestamp>${maven.build.timestamp}</timestamp>
+        <sonar.sources>src/main/java/com/kavinschool/verify</sonar.sources>
+        <sonar.tests>src/test/java/com/kavinschool/testng/examples</sonar.tests>
+        <sonar.coverage.exclusions></sonar.coverage.exclusions>
+        <sonar.links.homepage>https://sonarqube-azureappservice0a95.azurewebsites.net/dashboard?id=KangsCalcTest
+        </sonar.links.homepage>
+        <sonar.host.url>http://ec2-54-219-40-60.us-west-1.compute.amazonaws.com:9000/sonarqube</sonar.host.url>
+        <sonar.projectKey>KangsCalcTest</sonar.projectKey>
+        <sonar.projectName>KangsCalcTest</sonar.projectName>
+        <sonar.maven.plugin.version>3.9.0.2155</sonar.maven.plugin.version>
     </properties>
     <dependencies>
         <dependency>
@@ -29,17 +38,24 @@
         </dependency>
     </dependencies>
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.version}</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                </configuration>
-            </plugin>
-        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar.maven.plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compiler.version}</version>
+                    <configuration>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
     </build>
     <profiles>
         <profile>
