@@ -25,8 +25,8 @@
         <sonar.links.homepage>https://sonarqube-azureappservice0a95.azurewebsites.net/dashboard?id=KangsCalcTest
         </sonar.links.homepage>
         <sonar.host.url>http://ec2-54-219-40-60.us-west-1.compute.amazonaws.com:9000/sonarqube</sonar.host.url>
-        <sonar.projectKey>KangsCalcTest</sonar.projectKey>
-        <sonar.projectName>KangsCalcTest</sonar.projectName>
+        <sonar.projectKey>TestNG_Project</sonar.projectKey>
+        <sonar.projectName>TestNG_Project</sonar.projectName>
         <sonar.maven.plugin.version>3.9.0.2155</sonar.maven.plugin.version>
     </properties>
     <dependencies>
