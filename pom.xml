@@ -29,6 +29,7 @@
         <sonar.projectKey>TestNG_Project</sonar.projectKey>
         <sonar.projectName>TestNG_Project</sonar.projectName>
         <sonar.maven.plugin.version>3.9.0.2155</sonar.maven.plugin.version>
+        <sonar.java.binaries>**/target/classes</sonar.java.binaries>
     </properties>
     <dependencies>
         <dependency>
