@@ -16,7 +16,7 @@ node('win2') {
             bat(/"%MVN_HOME%\bin\mvn" -Pdata-provider clean test/)
         }
     }
-    stage('Test') {
-        junit '**/target/surefire-reports/TEST-*.xml'
-    }
+    //stage('Test') {
+    //    junit '**/target/surefire-reports/TEST-*.xml'
+    //}
 }
